@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    volumes: 
+      - .:/home/app
+    depends_on: 
+      - db
+    ports: 
+      - "3000:3000"
+      - "9229:9229"
+  db:
+    image: postgres
+    environment: 
+      POSTGRES_PASSWORD: Carbono12.
+      POSTGRES_USER: jhonnatha_am
+      POSTGRES_DB: db_name
+    volumes: 
+      - ./pgdata:/var/lib/postgresql/data
+    ports: 
+      - "5432:5432"
