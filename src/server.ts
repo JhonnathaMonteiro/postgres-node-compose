@@ -6,7 +6,7 @@ app.use(express.json());
 
 // ROutes
 app.get('/', (request, response) => {
-  return response.json({ message: 'Hello Jhonnatha' });
+  return response.json({ message: 'Hello There!' });
 });
 
 app.listen(3000, () => {
