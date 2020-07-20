@@ -4,7 +4,7 @@ import '@controllers/UsersController';
 const app = express();
 app.use(express.json());
 
-// ROutes
+// Routes
 app.get('/', (request, response) => {
   return response.json({ message: 'Hello There!' });
 });

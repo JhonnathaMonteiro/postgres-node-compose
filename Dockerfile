@@ -12,4 +12,4 @@ COPY . /home/app
 
 RUN npm run build
 
-CMD npm run ${NODE_ENV}
+CMD npm run dev
