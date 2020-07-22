@@ -1,9 +1,9 @@
-import { User } from '@models/User';
+import Person from '@models/Person';
 
 test('it should be ok', () => {
-  const user = new User();
+  const person = new Person();
 
-  user.name = 'Diego';
+  person.firstName = 'Diego';
 
-  expect(user.name).toEqual('Diego');
+  expect(person.firstName).toEqual('Diego');
 });
